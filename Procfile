@@ -1,1 +1,1 @@
-web: gunicorn app:bogovid
+web: gunicorn bogovid:app
