@@ -1,8 +1,21 @@
-<html>
-    <head>
-        <title> Sneed </title>
-    </head>
-    <body>
-        <p> About page, about co nie </p>
-    </body>
-</html>
+{% extends "layout.html" %}
+{% block title %} 
+    {% if title %} 
+        {{ title }} 
+    {% else %}
+        Bogosort
+    {% endif %}
+{% endblock %}
+
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+    .important { color: #336699; }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <h1> Dobry wieczur moi drodzy </h1>
+    <p> witam was wszystkich na mojej prześwietnej stronie i pozdrawiam serdeczne z tego miejsca </p>
+    <p>tymczasowe gówno</p>>
+{% endblock %}
